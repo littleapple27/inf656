@@ -14,17 +14,6 @@ app.set("view engine", "hbs");
 app.set("views", viewsPath);
 hbs.registerPartials(partialsPath);
 
-//const admin = express(); // the sub app
-// Define paths for Admin Express 
-//const adminViewsPath = path.join(__dirname, "../admin/templates/views");
-//const adminPartialsPath = path.join(__dirname, "../admin/templates/partials");
-
-// set views for Admin
-// admin.set('views', adminViewsPath);
-// hbs.registerPartials(adminPartialsPath);
-// admin.set('view engine', 'hbs');
-
-
 //Setup static directory to serve
 app.use(express.static(publicDirectoryPath));
 
@@ -240,24 +229,7 @@ app.get("", (req, res) => {
 });
 
 
-// // Admin panel 
-// admin.on('mount', function (parent) {
-// 	console.log('Admin Mounted')
-// 	console.log(parent) // refers to the parent app
-// })
-
-
-// admin.get('/', function (req, res) {
-// 	console.log(admin.mountpath) // /admin
-// 	res.render("dashboard", {
-// 		companyName: "Chroma Quilting"
-// 	});
-
-// })
-
-// app.use('/admin', admin) // mount the sub app
-
-
+// Require admin module 
 const admin = require("../admin/admin");
 
 app.use('/admin', admin) // mount the sub app

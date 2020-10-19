@@ -41,5 +41,4 @@ admin.get('/', function (req, res) {
 })
 
 
-
 module.exports = admin;
