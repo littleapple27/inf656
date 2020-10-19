@@ -1,0 +1,31 @@
+ <!-- gallery Grid-->
+<section class="page-section bg-light" id="gallery">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Gallery</h2>
+
+        </div>
+        <div class="row">
+
+            {{#each gallery}}
+            <div class="col-sm-3 gallery-item p-0 {{bgColor}} mx-auto">
+                <a class="gallery-link" data-toggle="modal"
+                    href="#galleryModal1">
+                    <div class={{galleryHover}}>
+                        <div class="gallery-hover-content">
+                            <i class="{{hoverIcon}}"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{img}}" alt="" />
+                </a>
+
+
+            </div>
+            {{/each}}
+
+
+
+        </div>
+
+    </div>
+</section>

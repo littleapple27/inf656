@@ -1,0 +1,70 @@
+ <!-- Services & Upcoming Classes -->
+<section class="mt-0" id="news">
+	<div class="container pt-5">
+
+		<!-- News Updates -->
+		<div class="col-12 px-3"><h2 class="section-heading text-uppercase">Recent News</h2></div>
+		<div class="row">
+
+
+					{{#each news}}
+					<!-- Blog Item -->
+					<div class="col-md-6 mb-5">
+						<div class="blog-item">
+							<div class="blog-img">
+								<a href="#">
+									<img src="{{img}}" alt="{{alt}}"></a>
+							</div>
+							<div class="blog-text">
+								<div class="blog-tag">
+									<h6 class="text-color-1"><small>{{category}}</small></h6>
+								</div>
+								<div class="blog-title">
+									<a href="#"><h4>{{title}}</h4></a>
+								</div>
+								<div class="blog-meta">
+									<p class="blog-date">{{date}}</p>
+								</div>
+								<div class="blog-desc">
+									<p>{{desc}} </p>
+								</div>
+								<div class="blog-author">
+									<a class="blog-share"
+										href="https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings"
+										target="_blank">
+										<button class="btn btn-link">Read Full Study</button>
+									</a>
+
+								</div>
+								<div class="blog-share-wrapper">
+									<a class="blog-share"
+										href="https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings"
+										target="_blank">
+										<i class="fab fa-researchgate"></i>
+									</a>
+									<a class="blog-share"
+										href="https://github.com/littleapple27/case-for-universal-meanings"
+										target="_blank">
+										<i class="fab fa-github"></i>
+									</a>
+									<a class="blog-share"
+										href="https://www.youtube.com/embed/sjWAdWMPcPM?rel=0&autoplay=1"
+										data-rel="lightcase">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Blog Item -->
+					{{/each}}
+
+				</div>{{!end of row}}
+
+				
+
+			</div>
+		</div>
+
+
+</section>
